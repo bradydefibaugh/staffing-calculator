@@ -7,7 +7,7 @@ using Werkzeug's `generate_password_hash` and validated with
 `check_password_hash`, following best practices for password storage.
 Use this as a starting point for a more robust authentication
 implementation. See the Flask‐Login documentation for extending
-user management and session handling ([How to Perform User Authentication with Flask-Login — SitePoint](https://www.sitepoint.com/flask-login-user-authentication/#:~:text=Key%20Takeaways)).
+user management and session handling【537517364647614†L145-L183】.
 """
 
 from flask import Flask, render_template_string, redirect, url_for, request, flash
@@ -37,7 +37,7 @@ login_manager.login_view = "login"
 
 # In-memory user store with hashed password. In a real application, use a
 # database and hashed passwords stored per user. See the Flask-Login docs for
-# details ([How to Perform User Authentication with Flask-Login — SitePoint](https://www.sitepoint.com/flask-login-user-authentication/#:~:text=Key%20Takeaways)).
+# details【537517364647614†L145-L183】.
 users = {
     "admin": generate_password_hash("password"),
 }
